@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Space Page</title>
+</head>
+<body>
+    <section class="showcase">
+        <header>
+            <h2 class="logo">Space</h2>
+            <div class="toggle"></div>
+        </header>
+
+       <video src="explore.mp4" muted loop autoplay></video> 
+
+        <div class="overlay"></div>
+
+        <div class="text">
+            <h2>The World</h2>
+            <h3>Is Your Space</h3>
+            <p> "Never tell me the sky's the limit when there are footprints on the moon".</p>
+            <a href="#">Explore</a>
+        </div>
+
+        <ul class="social">
+            <li><a href="https://github.com/natashaadam123"><img src="git.png" width="80px" height="80px"alt=""></a></li>
+            <li><a href="https://www.linkedin.com/in/natasha-adam-855b80146"><img src="linkedinicon.png" width="80px" height="80px"alt=""></a></li>
+            <li><a href="https://natashaadam123.github.io/"><img src="portfolio.png" width="80px" height="80px"alt=""></a></li>
+        </ul>
+    </section>
+
+
+    <div class="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Destination</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+    <script>
+        const menuToggle=document.querySelector('.toggle')
+        const showcase=document.querySelector('.showcase')
+
+        menuToggle.addEventListener('click', ()=> {
+            menuToggle.classList.toggle('active')
+            showcase.classList.toggle('active')
+        })
+
+
+    </script>
+</body>
+</html>
